@@ -2,20 +2,7 @@
 - Converting tracker_wise grouped json file to frame_wise grouped json file
 
 #### The input file (json) has the following structure:
-```json
-{
-	“answer_key” : 
-		{
-			“video2d” : 
-				{
-					“data” : 
-						{
-							“trackers” : [T1, T2, T3 ……… Tn]
-						}
-				}
-		}
-}
-```
+>{“answer_key” : {“video2d” : {“data” :{“trackers” : [T1, T2, T3 ……… Tn]}}}}
                 
 
 - A single element in the list **answer_key -> video2d -> data -> trackers** represent a shape tracked across a video which is split into multiple frames.
