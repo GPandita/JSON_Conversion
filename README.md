@@ -30,3 +30,7 @@
 frame_id  | tracking_id | label
 ------------- | ------------- | -------------
                      |                      |                    
+
+
+#### To run the file -> `[python] main.py [input_json_file_path]`
+#### TO test the code -> `[python] test.py`

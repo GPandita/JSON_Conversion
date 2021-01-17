@@ -4,7 +4,7 @@ Created on Sat Jan 17
 @author: Gaurav Pandita
 """
 import unittest
-from transform import *
+from main import *
 
 class TestJsonConversion(unittest.TestCase):
     def test_transform(self):

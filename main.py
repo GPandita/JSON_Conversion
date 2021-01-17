@@ -71,7 +71,7 @@ def generate_csv_file(data):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("\nRun the file as : [python] transform.py [input_json_file_path]\n")
+        print("\nRun the file as : [python] main.py [input_json_file_path]\n")
     else:
         data = read_json_file(sys.argv[1])
         generate_csv_file(data)
