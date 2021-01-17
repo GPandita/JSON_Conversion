@@ -12,7 +12,7 @@ def read_json_file(input_file_path):
     try:
         with open(input_file_path, "r") as read_file:
             data = json.load(read_file)
-        print("\n**** Read JSON file ****\n")
+        print("\n**** Read JSON file " + input_file_path + " ****\n")
         return data
     except:
         print("\n---- Error while reading the json file. Please check the input file ----\n")
@@ -70,7 +70,7 @@ def generate_csv_file(data):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 1:
+    if len(sys.argv) != 2:
         print("\nRun the file as : [python] transform.py [input_json_file_path]\n")
     else:
         data = read_json_file(sys.argv[1])
