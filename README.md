@@ -24,7 +24,7 @@
 - The frames key in the tracker is of type dict. A single key value pair in the frames dict is frame_id & annotation pair. 
 
 - The **transform.py** is to convert **answer_key -> video2d -> data -> trackers** to 
-**answer_key -> video2d -> data -> frames**.
+**answer_key -> video2d -> data -> frames** (i.e. to convert tracker-wise data to frame-wise data).
 - Also it creates a csv file having the following structure :
 
 frame_id  | tracking_id | label
