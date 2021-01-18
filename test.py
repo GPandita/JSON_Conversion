@@ -23,7 +23,7 @@ class TestJsonConversion(unittest.TestCase):
             exception_message = str(error)
             exception_type, exception_object, exception_traceback = sys.exc_info()
             logging.error(f"{exception_message} - {exception_type} - Line {exception_traceback.tb_lineno}")
-            logging.error("**** TEST CASE - test_transform - Fail ****")
+            logging.info("**** TEST CASE - test_transform - Fail ****")
             raise error
         logging.info("**** TEST CASE - test_transform - Pass ****")
 
